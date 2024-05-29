@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       align-items: center;
+       margin-top: 200px;
+    }
+
+    .container{
+        height: 300px;
+        width: 700px;
+        background-color: aquamarine;
+        font-style: italic;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       align-items: center;
+       
+       
+    }
+
+    .container , button{
+        background-color: aquamarine;
+       font-size: 20px;
+       padding: 2px;
+       margin-top: 5px;
+       width: 500px;
+       border-radius: 10px;
+      
+       
+       
+    }
+</style>
+<body>
+    <div class="container">
+        <h1> Welcome</h1>
+        <div class="level">
+            <h2> Choose your level</h2>
+            <button onclick="easy()"> Easy</button>
+            <button  onclick="medium()"> Medium</button>
+            <button  onclick="hard()">  Difficult</button>
+        </div>
+    </div>
+
+    <script>
+        function easy()  {
+            window.location.href = 'easy.html';
+        }
+
+        function medium() {
+            window.location.href = 'medium.html';
+        }
+
+        function hard() {
+            window.location.href = 'hard.html';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+           
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+           align-items: center;
+           margin-top: 200px;
+        }
+    
+        .container{
+            height: 200px;
+            width: 700px;
+            background-color: aquamarine;
+            font-style: italic;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+           align-items: center;
+           
+           
+        }
+    
+        .container , button{
+            background-color: aquamarine;
+           font-size: 20px;
+           padding: 2px;
+           margin-top: 5px;
+           width: 500px;
+           border-radius: 10px;
+          
+           
+           
+        }
+    </style>
+    <div class="container">
+        
+        <button>(3) 81/3</button>
+        <button onclick="two()">(a) 9</button>
+        <button onclick="one()">(b) 27</button>
+        <button onclick="one()">(c) 81</button>
+        <button onclick="one()"> (d) 3</button>
+    </div>
+
+    <script>
+        function one(){
+              window.location.href = "incorrect.html";
+        }
+
+        function two(){
+            alert("correct answer");
+            alert("Congratulations you have completed the easy level \n Try next levels")
+            window.location.href = "welcome.html";
+        }
+    </script>
+</body>
+</html>
